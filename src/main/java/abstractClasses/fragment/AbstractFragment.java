@@ -1,5 +1,6 @@
 package abstractClasses.fragment;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import utils.WebDriverWaiter;
@@ -20,5 +21,10 @@ public abstract class AbstractFragment extends WebDriverWaiter {
 
     public WebElement getRootElement() {
         return rootElement;
+    }
+
+    public AbstractFragment clickElement(By byLocator) {
+        rootElement.findElement(byLocator);
+        return this;
     }
 }

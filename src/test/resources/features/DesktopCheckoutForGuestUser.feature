@@ -4,6 +4,7 @@ Feature: Desktop Checkout for Guest User
   I want to be able proceed to checkout
   So that I can specify my delivery and payment details and place the order
 
+  @RunMe
   Scenario: Proceed to checkout, final review and place order as guest user
     Given I am an anonymous customer with clear cookies
     And I open the "Initial home page"
